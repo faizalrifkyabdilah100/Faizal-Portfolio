@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Proyek | EVENTA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: { colors: { primary: '#38bdf8', dark: '#020617' } }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #020617; opacity: 0; transition: opacity 0.6s ease-in-out; }
+        body.fade-in { opacity: 1; }
+        .fade-out { opacity: 0 !important; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.05); }
+    </style>
+</head>
+<body class="text-slate-300 font-sans">
+
+    <nav class="p-8">
+        <div class="container mx-auto">
+            <a href="../index.html" id="back-btn" class="text-primary font-bold hover:underline transition">← Kembali ke Beranda</a>
+        </div>
+    </nav>
+
+   <section class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <img src="../dist/img/project1/home.jpeg" class="w-full h-100 object-cover rounded-3xl mb-10 shadow-2xl shadow-primary/20">
+                <img src="../dist/img/project1/dashboard.jpeg" class="w-full h-100 object-cover rounded-3xl mb-10 shadow-2xl shadow-primary/20">
+                <img src="../dist/img/project1/qrcode.jpeg" class="w-full h-100 object-cover rounded-3xl mb-10 shadow-2xl shadow-primary/20">
+                
+                <h1 class="text-4xl lg:text-5xl font-bold text-white mb-6 tracking-tighter">EVENTA — Event Management Platform</h1>
+                
+                <div class="flex flex-wrap gap-3 mb-10">
+                    <span class="bg-white/5 border border-white/10 px-4 py-1 rounded-full text-xs text-primary font-bold">Laravel 12</span>
+                    <span class="bg-white/5 border border-white/10 px-4 py-1 rounded-full text-xs text-primary font-bold">React + Inertia</span>
+                    <span class="bg-white/5 border border-white/10 px-4 py-1 rounded-full text-xs text-primary font-bold">QR Check-In</span>
+                    <span class="bg-white/5 border border-white/10 px-4 py-1 rounded-full text-xs text-primary font-bold">Tailwind CSS</span>
+                </div>
+
+                <div class="prose prose-invert max-w-none">
+                    <h2 class="text-2xl font-bold text-white mb-4">Deskripsi Proyek</h2>
+                    <p class="mb-10 leading-relaxed text-slate-400">
+                        EVENTA adalah platform manajemen acara end-to-end yang dirancang untuk menangani seluruh siklus acara, mulai dari pembuatan event, pendaftaran peserta, hingga sistem verifikasi di lokasi (on-site) secara real-time.
+                    </p>
+                    
+                    <div class="space-y-12">
+                        <div>
+                            <h3 class="text-xl font-bold text-primary mb-3">1. Manajemen Acara & Full-stack Architecture</h3>
+                            <p class="text-sm mb-4">Menggunakan Laravel 12 sebagai core engine dan React + Inertia untuk pengalaman user interface yang seamless.</p>
+                            <ul class="list-disc ml-6 space-y-2 text-sm text-slate-400">
+                                <li>Implementasi CRUD acara yang dinamis dengan dukungan multi-sesi (EventSession).</li>
+                                <li>Kustomisasi tema acara (logo dan warna) sesuai kebutuhan penyelenggara.</li>
+                                <li>Alur pendaftaran terstruktur dengan manajemen penyimpanan data peserta per-sesi.</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h3 class="text-xl font-bold text-primary mb-3">2. Ticketing & QR Check-In System</h3>
+                            <p class="text-sm mb-4">Sistem verifikasi canggih untuk meminimalkan antrean dan meningkatkan keamanan tiket.</p>
+                            <ul class="list-disc ml-6 space-y-2 text-sm text-slate-400">
+                                <li>Pembuatan tiket digital otomatis dengan kode registrasi unik dan QR Code.</li>
+                                <li>Sistem pengiriman tiket melalui endpoint <code class="text-pink-500 italic">sendTicket</code>.</li>
+                                <li>Mesin verifikasi QR real-time pada sisi Admin untuk update status kehadiran (Attendance) secara instan.</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h3 class="text-xl font-bold text-primary mb-3">3. Dashboard Admin, Analytics & Keamanan</h3>
+                            <p class="text-sm mb-4">Pusat kontrol yang memberikan wawasan data kepada penyelenggara acara.</p>
+                            <ul class="list-disc ml-6 space-y-2 text-sm text-slate-400">
+                                <li>Dashboard analitik untuk memantau statistik pendaftaran dan <i>attendance rate</i> per acara.</li>
+                                <li>Otentikasi dan verifikasi berlapis menggunakan Laravel Fortify.</li>
+                                <li>Proteksi API menggunakan Laravel Sanctum untuk keamanan data transaksi.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="mt-16 pt-10 border-t border-white/10">
+                        <a href="https://github.com/faizalrifkyabdilah100/Eventa-EventOrganizerFromWeb" target="_blank" class="inline-block bg-primary text-dark font-black px-8 py-4 rounded-xl hover:shadow-[0_0_20px_rgba(56,189,248,0.4)] transition duration-300 uppercase tracking-widest text-sm">
+                            Lihat Repository GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        window.addEventListener("DOMContentLoaded", () => { document.body.classList.add("fade-in"); });
+        document.getElementById("back-btn").addEventListener("click", function(e) {
+            e.preventDefault();
+            const target = this.getAttribute("href");
+            document.body.classList.add("fade-out");
+            setTimeout(() => { window.location.href = target; }, 600);
+        });
+    </script>
+</body>
+</html>

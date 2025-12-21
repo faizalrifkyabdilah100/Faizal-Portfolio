@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Proyek | Hotel Reservation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: { colors: { primary: '#38bdf8', dark: '#020617' } }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #020617; opacity: 0; transition: opacity 0.6s ease-in-out; }
+        body.fade-in { opacity: 1; }
+        .fade-out { opacity: 0 !important; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.05); }
+    </style>
+</head>
+<body class="text-slate-300 font-sans">
+
+    <nav class="p-8">
+        <div class="container mx-auto">
+            <a href="../index.html" id="back-btn" class="text-primary font-bold hover:underline transition">← Kembali ke Beranda</a>
+        </div>
+    </nav>
+
+   <section class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <img src="../dist/img/project2/home.png" class="w-full object-cover rounded-3xl mb-10 shadow-2xl shadow-primary/20">
+                <img src="../dist/img/project2/tamu.png" class="w-full object-cover rounded-3xl mb-10 shadow-2xl shadow-primary/20">
+                <img src="../dist/img/project2/kamar.png" class="w-full object-cover rounded-3xl mb-10 shadow-2xl shadow-primary/20">
+                <img src="../dist/img/project2/check-in.png" class="w-full object-cover rounded-3xl mb-10 shadow-2xl shadow-primary/20">
+                
+                <h1 class="text-4xl lg:text-5xl font-bold text-white mb-6">Hotel Reservation System</h1>
+                
+                <div class="flex flex-wrap gap-3 mb-10">
+                    <span class="bg-white/5 border border-white/10 px-4 py-1 rounded-full text-xs text-primary">Java (NetBeans)</span>
+                    <span class="bg-white/5 border border-white/10 px-4 py-1 rounded-full text-xs text-primary">MySQL & JDBC</span>
+                    <span class="bg-white/5 border border-white/10 px-4 py-1 rounded-full text-xs text-primary">MVC Architecture</span>
+                    <span class="bg-white/5 border border-white/10 px-4 py-1 rounded-full text-xs text-primary">DAO Pattern</span>
+                </div>
+
+                <div class="prose prose-invert max-w-none">
+                    <h2 class="text-2xl font-bold text-white mb-4">Deskripsi Proyek</h2>
+                    <p class="mb-6 leading-relaxed">
+                        Dalam proyek ini, saya bertindak sebagai Ketua Tim (Project Leader) yang mengelola 3 orang anggota. Kami membangun aplikasi desktop berbasis Java untuk manajemen reservasi hotel dengan arsitektur OOP yang solid, dan berhasil mendapatkan nilai A.
+                    </p>
+                    
+                    <h2 class="text-2xl font-bold text-white mb-4">Fitur Utama & Teknis</h2>
+                    <ul class="list-disc ml-6 space-y-2 mb-10">
+                        <li>Implementasi arsitektur MVC (Model-View-Controller) dan pola desain DAO.</li>
+                        <li>Integrasi JDBC/MySQL untuk operasi CRUD data tamu dan kamar secara real-time.</li>
+                        <li>Custom Table Model dengan fitur pencarian data yang dinamis.</li>
+                        <li>Manajemen tugas tim berdasarkan keahlian masing-masing anggota untuk efisiensi maksimal.</li>
+                    </ul>
+
+                    <a href="https://github.com/faizalrifkyabdilah100/Projek-Akhir-PBO-Dimsum-Mentai" target="_blank" class="inline-block bg-primary text-dark font-bold px-8 py-4 rounded-xl hover:brightness-110 transition">
+                        Lihat Repository GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        window.addEventListener("DOMContentLoaded", () => { document.body.classList.add("fade-in"); });
+        document.getElementById("back-btn").addEventListener("click", function(e) {
+            e.preventDefault();
+            const target = this.getAttribute("href");
+            document.body.classList.add("fade-out");
+            setTimeout(() => { window.location.href = target; }, 600);
+        });
+    </script>
+</body>
+</html>
