@@ -22,8 +22,12 @@
 <body class="text-slate-300 font-sans">
 
     <nav class="p-8">
-        <div class="container mx-auto">
-            <a href="../index.html" id="back-btn" class="text-primary font-bold hover:underline transition">← Kembali ke Beranda</a>
+        <div class="container mx-auto flex items-center justify-between">
+            <a href="../index.html" id="back-btn" class="text-primary font-bold hover:underline transition" data-i18n="project2.back">← Kembali ke Beranda</a>
+            <div class="flex items-center space-x-3">
+                <button id="btn-id" data-lang="id" class="text-sm px-3 py-1 rounded-md border border-white/10 bg-white/5 text-white font-semibold hover:brightness-105">ID</button>
+                <button id="btn-en" data-lang="en" class="text-sm px-3 py-1 rounded-md border border-white/10 bg-white/5 text-white font-semibold hover:brightness-105">EN</button>
+            </div>
         </div>
     </nav>
 
@@ -35,7 +39,7 @@
                 <img src="../dist/img/project2/kamar.png" class="w-full object-cover rounded-3xl mb-10 shadow-2xl shadow-primary/20">
                 <img src="../dist/img/project2/check-in.png" class="w-full object-cover rounded-3xl mb-10 shadow-2xl shadow-primary/20">
                 
-                <h1 class="text-4xl lg:text-5xl font-bold text-white mb-6">Hotel Reservation System</h1>
+                <h1 class="text-4xl lg:text-5xl font-bold text-white mb-6" data-i18n="project2.title">Hotel Reservation System</h1>
                 
                 <div class="flex flex-wrap gap-3 mb-10">
                     <span class="bg-white/5 border border-white/10 px-4 py-1 rounded-full text-xs text-primary">Java (NetBeans)</span>
@@ -45,20 +49,20 @@
                 </div>
 
                 <div class="prose prose-invert max-w-none">
-                    <h2 class="text-2xl font-bold text-white mb-4">Deskripsi Proyek</h2>
-                    <p class="mb-6 leading-relaxed">
+                    <h2 class="text-2xl font-bold text-white mb-4" data-i18n="project2.descriptionTitle">Deskripsi Proyek</h2>
+                    <p class="mb-6 leading-relaxed" data-i18n="project2.description">
                         Dalam proyek ini, saya bertindak sebagai Ketua Tim (Project Leader) yang mengelola 3 orang anggota. Kami membangun aplikasi desktop berbasis Java untuk manajemen reservasi hotel dengan arsitektur OOP yang solid, dan berhasil mendapatkan nilai A.
                     </p>
                     
-                    <h2 class="text-2xl font-bold text-white mb-4">Fitur Utama & Teknis</h2>
+                    <h2 class="text-2xl font-bold text-white mb-4" data-i18n="project2.featuresTitle">Fitur Utama & Teknis</h2>
                     <ul class="list-disc ml-6 space-y-2 mb-10">
-                        <li>Implementasi arsitektur MVC (Model-View-Controller) dan pola desain DAO.</li>
-                        <li>Integrasi JDBC/MySQL untuk operasi CRUD data tamu dan kamar secara real-time.</li>
-                        <li>Custom Table Model dengan fitur pencarian data yang dinamis.</li>
-                        <li>Manajemen tugas tim berdasarkan keahlian masing-masing anggota untuk efisiensi maksimal.</li>
+                        <li data-i18n="project2.feature1">Implementasi arsitektur MVC (Model-View-Controller) dan pola desain DAO.</li>
+                        <li data-i18n="project2.feature2">Integrasi JDBC/MySQL untuk operasi CRUD data tamu dan kamar secara real-time.</li>
+                        <li data-i18n="project2.feature3">Custom Table Model dengan fitur pencarian data yang dinamis.</li>
+                        <li data-i18n="project2.feature4">Manajemen tugas tim berdasarkan keahlian masing-masing anggota untuk efisiensi maksimal.</li>
                     </ul>
 
-                    <a href="https://github.com/faizalrifkyabdilah100/Projek-Akhir-PBO-Dimsum-Mentai" target="_blank" class="inline-block bg-primary text-dark font-bold px-8 py-4 rounded-xl hover:brightness-110 transition">
+                    <a href="https://github.com/faizalrifkyabdilah100/Projek-Akhir-PBO-Dimsum-Mentai" target="_blank" class="inline-block bg-primary text-dark font-bold px-8 py-4 rounded-xl hover:brightness-110 transition" data-i18n="project2.repo">
                         Lihat Repository GitHub
                     </a>
                 </div>
@@ -66,6 +70,7 @@
         </div>
     </section>
 
+    <script src="../src/i18n.js" defer></script>
     <script>
         window.addEventListener("DOMContentLoaded", () => { document.body.classList.add("fade-in"); });
         document.getElementById("back-btn").addEventListener("click", function(e) {

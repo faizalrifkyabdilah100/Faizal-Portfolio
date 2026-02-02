@@ -1,0 +1,88 @@
+{
+  "nav": {
+    "home": "Beranda",
+    "about": "Tentang",
+    "projects": "Proyek",
+    "contact": "Kontak",
+    "email": "Email Saya"
+  },
+  "hero": {
+    "available": "Tersedia untuk Bekerja",
+    "title1": "Software",
+    "title2": "Engineer",
+    "desc": "Saya <strong>Faizal Rifky Abdilah</strong>, mahasiswa Teknik Informatika yang fokus membangun solusi digital menggunakan Laravel, React, dan SQL.",
+    "viewProjects": "Lihat Proyek"
+  },
+  "about": {
+    "title": "Profil &",
+    "highlight": "Pendidikan",
+    "paragraph": "Berfokus pada pengembangan sistem berbasis web dan mobile, saya merupakan mahasiswa Informatika di <strong>Universitas Negeri Semarang</strong> dengan <strong>IPK 3.52/4.00</strong>."
+  },
+  "projects": {
+    "selectedWorks": "Karya Pilihan",
+    "viewDetails": "Lihat Detail →"
+  },
+  "contact": {
+    "title": "Ayo Berdiskusi!",
+    "desc": "Punya proyek menarik atau ingin berkolaborasi? Saya selalu terbuka untuk peluang baru di bidang pengembangan perangkat lunak.",
+    "nameLabel": "Nama Lengkap",
+    "emailLabel": "Email Aktif",
+    "subjectLabel": "Subjek Pesan",
+    "messageLabel": "Pesan Anda",
+    "sendButton": "Kirim Pesan Sekarang",
+    "placeholderName": "Faizal Rifky Abdilah",
+    "placeholderEmail": "faizal@example.com",
+    "placeholderSubject": "Tawaran Kolaborasi",
+    "placeholderMessage": "Halo Faizal, saya ingin..."
+  },
+  "footer": {
+    "copyright": "© 2025 Faizal Rifky Abdilah. Mahasiswa Teknik Informatika UNNES"
+  },
+  "project1": {
+    "back": "← Kembali ke Beranda",
+    "title": "EVENTA — Event Management Platform",
+    "descriptionTitle": "Deskripsi Proyek",
+    "description": "EVENTA adalah platform manajemen acara end-to-end yang dirancang untuk menangani seluruh siklus acara, mulai dari pembuatan event, pendaftaran peserta, hingga sistem verifikasi di lokasi secara real-time.",
+    "section1Title": "1. Manajemen Acara & Full-stack Architecture",
+    "section1Desc": "Menggunakan Laravel 12 sebagai core engine dan React + Inertia untuk pengalaman antarmuka yang mulus.",
+    "section1Li1": "Implementasi CRUD acara yang dinamis dengan dukungan multi-sesi (EventSession).",
+    "section1Li2": "Kustomisasi tema acara (logo dan warna) sesuai kebutuhan penyelenggara.",
+    "section1Li3": "Alur pendaftaran terstruktur dengan manajemen penyimpanan data peserta per-sesi.",
+    "section2Title": "2. Ticketing & QR Check-In System",
+    "section2Desc": "Sistem verifikasi canggih untuk meminimalkan antrean dan meningkatkan keamanan tiket.",
+    "section2Li1": "Pembuatan tiket digital otomatis dengan kode registrasi unik dan QR Code.",
+    "section2Li2": "Sistem pengiriman tiket melalui endpoint sendTicket.",
+    "section2Li3": "Mesin verifikasi QR real-time pada sisi Admin untuk update status kehadiran.",
+    "section3Title": "3. Dashboard Admin, Analytics & Keamanan",
+    "section3Desc": "Pusat kontrol yang memberikan wawasan data kepada penyelenggara acara.",
+    "section3Li1": "Dashboard analitik untuk memantau statistik pendaftaran dan attendance rate per acara.",
+    "section3Li2": "Otentikasi dan verifikasi berlapis menggunakan Laravel Fortify.",
+    "section3Li3": "Proteksi API menggunakan Laravel Sanctum untuk keamanan data transaksi.",
+    "repo": "Lihat Repository GitHub"
+  },
+  "project2": {
+    "back": "← Kembali ke Beranda",
+    "title": "Hotel Reservation System",
+    "descriptionTitle": "Deskripsi Proyek",
+    "description": "Dalam proyek ini, saya bertindak sebagai Ketua Tim yang mengelola 3 orang anggota. Kami membangun aplikasi desktop berbasis Java untuk manajemen reservasi hotel dengan arsitektur OOP yang solid dan berhasil mendapatkan nilai A.",
+    "featuresTitle": "Fitur Utama & Teknis",
+    "feature1": "Implementasi arsitektur MVC (Model-View-Controller) dan pola desain DAO.",
+    "feature2": "Integrasi JDBC/MySQL untuk operasi CRUD data tamu dan kamar secara real-time.",
+    "feature3": "Custom Table Model dengan fitur pencarian data yang dinamis.",
+    "feature4": "Manajemen tugas tim berdasarkan keahlian masing-masing anggota untuk efisiensi maksimal.",
+    "repo": "Lihat Repository GitHub"
+  },
+  "project3": {
+    "back": "← Kembali ke Beranda",
+    "title": "KripKrip Encryption Tool",
+    "descriptionTitle": "Deskripsi Proyek",
+    "description": "KripKrip adalah aplikasi enkripsi berbasis web yang dirancang untuk memberikan lapisan keamanan tambahan pada data digital. Proyek ini dikembangkan sebagai tugas universitas dengan fokus pada pengamanan informasi melalui metode enkripsi teks dan gambar yang efisien. Dengan mengintegrasikan FastAPI di sisi backend dan React di sisi frontend, aplikasi ini menawarkan performa yang cepat dalam memproses algoritma kriptografi yang kompleks.",
+    "featuresTitle": "Fitur Utama & Teknis",
+    "feature1": "Enkripsi Teks & Gambar: Kemampuan untuk mengonversi pesan teks dan file gambar menjadi format terenkripsi.",
+    "feature2": "Implementasi Algoritma Standar: Penggunaan algoritma seperti AES-256 dan DES untuk keamanan data.",
+    "feature3": "Arsitektur Modern: FastAPI untuk backend dan React untuk frontend.",
+    "feature4": "Keamanan Data End-to-End: Proses pengolahan data dirancang untuk studi kasus kriptografi.",
+    "repo": "Lihat Repository GitHub",
+    "live": "Lihat Aplikasi"
+  }
+}

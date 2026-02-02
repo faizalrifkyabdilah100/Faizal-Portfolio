@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Proyek | Hotel Reservation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: { colors: { primary: '#38bdf8', dark: '#020617' } }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #020617; opacity: 0; transition: opacity 0.6s ease-in-out; }
+        body.fade-in { opacity: 1; }
+        .fade-out { opacity: 0 !important; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.05); }
+    </style>
+</head>
+<body class="text-slate-300 font-sans">
+
+    <nav class="p-8">
+        <div class="container mx-auto flex items-center justify-between">
+            <a href="../index.html" id="back-btn" class="text-primary font-bold hover:underline transition" data-i18n="project3.back">← Kembali ke Beranda</a>
+            <div class="flex items-center space-x-3">
+                <button id="btn-id" data-lang="id" class="text-sm px-3 py-1 rounded-md border border-white/10 hover:bg-white/5">ID</button>
+                <button id="btn-en" data-lang="en" class="text-sm px-3 py-1 rounded-md border border-white/10 hover:bg-white/5">EN</button>
+            </div>
+        </div>
+    </nav>
+
+   <section class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <img src="../dist/img/project3/home1.png" class="w-full object-cover rounded-3xl mb-10 shadow-2xl shadow-primary/20">
+                <img src="../dist/img/project3/home2.png" class="w-full object-cover rounded-3xl mb-10 shadow-2xl shadow-primary/20">
+                <img src="../dist/img/project3/sbox_analisis.png" class="w-full object-cover rounded-3xl mb-10 shadow-2xl shadow-primary/20">
+                <img src="../dist/img/project3/sbox_generator.png" class="w-full object-cover rounded-3xl mb-10 shadow-2xl shadow-primary/20">
+                <img src="../dist/img/project3/text_enkripsi.png" class="w-full object-cover rounded-3xl mb-10 shadow-2xl shadow-primary/20">
+                <img src="../dist/img/project3/text_dekripsi.png" class="w-full object-cover rounded-3xl mb-10 shadow-2xl shadow-primary/20">
+                <img src="../dist/img/project3/image_enkripsi.png" class="w-full object-cover rounded-3xl mb-10 shadow-2xl shadow-primary/20">
+                <img src="../dist/img/project3/image_dekripsi.png" class="w-full object-cover rounded-3xl mb-10 shadow-2xl shadow-primary/20">
+                <img src="../dist/img/project3/sbox_manager.png" class="w-full object-cover rounded-3xl mb-10 shadow-2xl shadow-primary/20">
+                <img src="../dist/img/project3/our_team.png" class="w-full object-cover rounded-3xl mb-10 shadow-2xl shadow-primary/20">
+                
+                <h1 class="text-4xl lg:text-5xl font-bold text-white mb-6" data-i18n="project3.title">KripKrip Encryption Tool</h1>
+                
+                <div class="flex flex-wrap gap-3 mb-10">
+                    <span class="bg-white/5 border border-white/10 px-4 py-1 rounded-full text-xs text-primary">Fast API</span>
+                    <span class="bg-white/5 border border-white/10 px-4 py-1 rounded-full text-xs text-primary">React</span>
+                    <span class="bg-white/5 border border-white/10 px-4 py-1 rounded-full text-xs text-primary">Cryptography</span>
+                    <span class="bg-white/5 border border-white/10 px-4 py-1 rounded-full text-xs text-primary">Python</span>
+                </div>
+
+                <div class="prose prose-invert max-w-none">
+                    <h2 class="text-2xl font-bold text-white mb-4" data-i18n="project3.descriptionTitle">Deskripsi Proyek</h2>
+                    <p class="mb-6 leading-relaxed" data-i18n="project3.description">
+                        KripKrip adalah aplikasi enkripsi berbasis web yang dirancang untuk memberikan lapisan keamanan tambahan pada data digital. Proyek ini dikembangkan sebagai tugas universitas dengan fokus pada pengamanan informasi melalui metode enkripsi teks dan gambar yang efisien. Dengan mengintegrasikan FastAPI di sisi backend dan React di sisi frontend, aplikasi ini menawarkan performa yang cepat dalam memproses algoritma kriptografi yang kompleks.
+                    </p>
+                    
+                    <h2 class="text-2xl font-bold text-white mb-4" data-i18n="project3.featuresTitle">Fitur Utama & Teknis</h2>
+                    <ul class="list-disc ml-6 space-y-2 mb-10">
+                        <li data-i18n="project3.feature1">Enkripsi Teks & Gambar: Kemampuan untuk mengonversi pesan teks dan file gambar menjadi format terenkripsi yang tidak dapat dibaca tanpa kunci yang tepat.</li>
+                        <li data-i18n="project3.feature2">Implementasi Algoritma Standar: Penggunaan algoritma keamanan yang kuat seperti AES-256 dan DES untuk menjamin integritas serta kerahasiaan data.</li>
+                        <li data-i18n="project3.feature3">Arsitektur Modern: Pemanfaatan FastAPI untuk penanganan API yang responsif dan React untuk antarmuka pengguna yang dinamis serta intuitif.</li>
+                        <li data-i18n="project3.feature4">Keamanan Data End-to-End: Proses pengolahan data yang dirancang khusus untuk memenuhi kebutuhan studi kasus kriptografi di lingkungan akademik.</li>
+                    </ul>
+
+                    <a href="https://github.com/faizalrifkyabdilah100/KripKrip" target="_blank" class="inline-block bg-primary text-dark font-bold px-8 py-4 rounded-xl hover:brightness-110 transition" data-i18n="project3.repo">
+                        Lihat Repository GitHub
+                    </a>
+                    <a href="https://krip-krip.vercel.app" target="_blank" class="inline-block bg-primary text-dark font-bold px-8 py-4 rounded-xl hover:brightness-110 transition" data-i18n="project3.live">
+                        Lihat Langsung Aplikasinya
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="../src/i18n.js" defer></script>
+    <script>
+        window.addEventListener("DOMContentLoaded", () => { document.body.classList.add("fade-in"); });
+        document.getElementById("back-btn").addEventListener("click", function(e) {
+            e.preventDefault();
+            const target = this.getAttribute("href");
+            document.body.classList.add("fade-out");
+            setTimeout(() => { window.location.href = target; }, 600);
+        });
+    </script>
+</body>
+</html>

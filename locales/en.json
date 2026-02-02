@@ -1,0 +1,88 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact",
+    "email": "Email Me"
+  },
+  "hero": {
+    "available": "Available for Work",
+    "title1": "Software",
+    "title2": "Engineer",
+    "desc": "I'm Faizal Rifky Abdilah, a Computer Science student specializing in building digital solutions using Laravel, React, and SQL.",
+    "viewProjects": "View Projects"
+  },
+  "about": {
+    "title": "Profile &",
+    "highlight": "Education",
+    "paragraph": "Focused on web and mobile development, I'm a Computer Science student at Universitas Negeri Semarang with a GPA of 3.52/4.00."
+  },
+  "projects": {
+    "selectedWorks": "Selected Works",
+    "viewDetails": "View Details →"
+  },
+  "contact": {
+    "title": "Let's Talk!",
+    "desc": "Have an interesting project or want to collaborate? I'm open to new opportunities in software development.",
+    "nameLabel": "Full Name",
+    "emailLabel": "Email Address",
+    "subjectLabel": "Subject",
+    "messageLabel": "Your Message",
+    "sendButton": "Send Message Now",
+    "placeholderName": "Faizal Rifky Abdilah",
+    "placeholderEmail": "faizal@example.com",
+    "placeholderSubject": "Collaboration Offer",
+    "placeholderMessage": "Hello Faizal, I would like to..."
+  },
+  "footer": {
+    "copyright": "© 2025 Faizal Rifky Abdilah. Mahasiswa Teknik Informatika UNNES"
+  },
+  "project1": {
+    "back": "← Back to Home",
+    "title": "EVENTA — Event Management Platform",
+    "descriptionTitle": "Project Description",
+    "description": "EVENTA is an end-to-end event management platform designed to handle the entire event lifecycle, from event creation and attendee registration to on-site verification in real-time.",
+    "section1Title": "1. Event Management & Full-stack Architecture",
+    "section1Desc": "Using Laravel 12 as the core engine and React + Inertia for a seamless UI experience.",
+    "section1Li1": "Dynamic event CRUD with support for multi-session (EventSession).",
+    "section1Li2": "Customize event themes (logo and color) to organizer needs.",
+    "section1Li3": "Structured registration flow with per-session participant data storage.",
+    "section2Title": "2. Ticketing & QR Check-In System",
+    "section2Desc": "Advanced verification system to minimize queues and increase ticket security.",
+    "section2Li1": "Automatic digital ticket creation with unique registration codes and QR Codes.",
+    "section2Li2": "Ticket delivery via endpoint sendTicket.",
+    "section2Li3": "Real-time QR verification engine for Admin to update attendance status instantly.",
+    "section3Title": "3. Admin Dashboard, Analytics & Security",
+    "section3Desc": "A control center that provides insights to event organizers.",
+    "section3Li1": "Analytics dashboard to monitor registration statistics and attendance rates per event.",
+    "section3Li2": "Layered authentication using Laravel Fortify.",
+    "section3Li3": "API protection using Laravel Sanctum for transactional data security.",
+    "repo": "View GitHub Repository"
+  },
+  "project2": {
+    "back": "← Back to Home",
+    "title": "Hotel Reservation System",
+    "descriptionTitle": "Project Description",
+    "description": "In this project I acted as Project Leader managing a 3-person team. We built a Java desktop application for hotel reservation management with a solid OOP architecture and received an A grade.",
+    "featuresTitle": "Main Features & Technical",
+    "feature1": "Implementation of MVC architecture (Model-View-Controller) and DAO pattern.",
+    "feature2": "Integration of JDBC/MySQL for CRUD operations on guests and rooms in real-time.",
+    "feature3": "Custom Table Model with dynamic search features.",
+    "feature4": "Team task management based on each member's expertise for maximum efficiency.",
+    "repo": "View GitHub Repository"
+  },
+  "project3": {
+    "back": "← Back to Home",
+    "title": "KripKrip Encryption Tool",
+    "descriptionTitle": "Project Description",
+    "description": "KripKrip is a web-based encryption application designed to add an extra layer of security to digital data. This project was developed as a university assignment focusing on securing information through efficient text and image encryption methods. Using FastAPI in the backend and React in the frontend, the app delivers fast performance for processing complex cryptographic algorithms.",
+    "featuresTitle": "Main Features & Technical",
+    "feature1": "Text & Image Encryption: Convert messages and images into encrypted formats",
+    "feature2": "Implementation of Standard Algorithms: Use strong algorithms like AES-256 and DES",
+    "feature3": "Modern Architecture: FastAPI backend and React frontend",
+    "feature4": "End-to-End Data Security: Designed for academic cryptography use cases",
+    "repo": "View GitHub Repository",
+    "live": "View Live App"
+  }
+}

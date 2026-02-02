@@ -22,8 +22,12 @@
 <body class="text-slate-300 font-sans">
 
     <nav class="p-8">
-        <div class="container mx-auto">
-            <a href="../index.html" id="back-btn" class="text-primary font-bold hover:underline transition">← Kembali ke Beranda</a>
+        <div class="container mx-auto flex items-center justify-between">
+            <a href="../index.html" id="back-btn" class="text-primary font-bold hover:underline transition" data-i18n="project1.back">← Kembali ke Beranda</a>
+            <div class="flex items-center space-x-3">
+                <button id="btn-id" data-lang="id" class="text-sm px-3 py-1 rounded-md border border-white/10 bg-white/5 text-white font-semibold hover:brightness-105">ID</button>
+                <button id="btn-en" data-lang="en" class="text-sm px-3 py-1 rounded-md border border-white/10 bg-white/5 text-white font-semibold hover:brightness-105">EN</button>
+            </div>
         </div>
     </nav>
 
@@ -34,7 +38,7 @@
                 <img src="../dist/img/project1/dashboard.jpeg" class="w-full h-100 object-cover rounded-3xl mb-10 shadow-2xl shadow-primary/20">
                 <img src="../dist/img/project1/qrcode.jpeg" class="w-full h-100 object-cover rounded-3xl mb-10 shadow-2xl shadow-primary/20">
                 
-                <h1 class="text-4xl lg:text-5xl font-bold text-white mb-6 tracking-tighter">EVENTA — Event Management Platform</h1>
+                <h1 class="text-4xl lg:text-5xl font-bold text-white mb-6 tracking-tighter" data-i18n="project1.title">EVENTA — Event Management Platform</h1>
                 
                 <div class="flex flex-wrap gap-3 mb-10">
                     <span class="bg-white/5 border border-white/10 px-4 py-1 rounded-full text-xs text-primary font-bold">Laravel 12</span>
@@ -44,29 +48,29 @@
                 </div>
 
                 <div class="prose prose-invert max-w-none">
-                    <h2 class="text-2xl font-bold text-white mb-4">Deskripsi Proyek</h2>
-                    <p class="mb-10 leading-relaxed text-slate-400">
+                    <h2 class="text-2xl font-bold text-white mb-4" data-i18n="project1.descriptionTitle">Deskripsi Proyek</h2>
+                    <p class="mb-10 leading-relaxed text-slate-400" data-i18n="project1.description">
                         EVENTA adalah platform manajemen acara end-to-end yang dirancang untuk menangani seluruh siklus acara, mulai dari pembuatan event, pendaftaran peserta, hingga sistem verifikasi di lokasi (on-site) secara real-time.
                     </p>
                     
                     <div class="space-y-12">
                         <div>
-                            <h3 class="text-xl font-bold text-primary mb-3">1. Manajemen Acara & Full-stack Architecture</h3>
-                            <p class="text-sm mb-4">Menggunakan Laravel 12 sebagai core engine dan React + Inertia untuk pengalaman user interface yang seamless.</p>
+                            <h3 class="text-xl font-bold text-primary mb-3" data-i18n="project1.section1Title">1. Manajemen Acara & Full-stack Architecture</h3>
+                            <p class="text-sm mb-4" data-i18n="project1.section1Desc">Menggunakan Laravel 12 sebagai core engine dan React + Inertia untuk pengalaman user interface yang seamless.</p>
                             <ul class="list-disc ml-6 space-y-2 text-sm text-slate-400">
-                                <li>Implementasi CRUD acara yang dinamis dengan dukungan multi-sesi (EventSession).</li>
-                                <li>Kustomisasi tema acara (logo dan warna) sesuai kebutuhan penyelenggara.</li>
-                                <li>Alur pendaftaran terstruktur dengan manajemen penyimpanan data peserta per-sesi.</li>
+                                <li data-i18n="project1.section1Li1">Implementasi CRUD acara yang dinamis dengan dukungan multi-sesi (EventSession).</li>
+                                <li data-i18n="project1.section1Li2">Kustomisasi tema acara (logo dan warna) sesuai kebutuhan penyelenggara.</li>
+                                <li data-i18n="project1.section1Li3">Alur pendaftaran terstruktur dengan manajemen penyimpanan data peserta per-sesi.</li>
                             </ul>
                         </div>
 
                         <div>
-                            <h3 class="text-xl font-bold text-primary mb-3">2. Ticketing & QR Check-In System</h3>
-                            <p class="text-sm mb-4">Sistem verifikasi canggih untuk meminimalkan antrean dan meningkatkan keamanan tiket.</p>
+                            <h3 class="text-xl font-bold text-primary mb-3" data-i18n="project1.section2Title">2. Ticketing & QR Check-In System</h3>
+                            <p class="text-sm mb-4" data-i18n="project1.section2Desc">Sistem verifikasi canggih untuk meminimalkan antrean dan meningkatkan keamanan tiket.</p>
                             <ul class="list-disc ml-6 space-y-2 text-sm text-slate-400">
-                                <li>Pembuatan tiket digital otomatis dengan kode registrasi unik dan QR Code.</li>
-                                <li>Sistem pengiriman tiket melalui endpoint <code class="text-pink-500 italic">sendTicket</code>.</li>
-                                <li>Mesin verifikasi QR real-time pada sisi Admin untuk update status kehadiran (Attendance) secara instan.</li>
+                                <li data-i18n="project1.section2Li1">Pembuatan tiket digital otomatis dengan kode registrasi unik dan QR Code.</li>
+                                <li data-i18n="project1.section2Li2">Sistem pengiriman tiket melalui endpoint <code class="text-pink-500 italic">sendTicket</code>.</li>
+                                <li data-i18n="project1.section2Li3">Mesin verifikasi QR real-time pada sisi Admin untuk update status kehadiran (Attendance) secara instan.</li>
                             </ul>
                         </div>
 
@@ -91,6 +95,7 @@
         </div>
     </section>
 
+    <script src="../src/i18n.js" defer></script>
     <script>
         window.addEventListener("DOMContentLoaded", () => { document.body.classList.add("fade-in"); });
         document.getElementById("back-btn").addEventListener("click", function(e) {
